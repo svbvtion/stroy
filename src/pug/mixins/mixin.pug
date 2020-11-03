@@ -1,0 +1,35 @@
+include vars
+
+mixin svg(name,mod)
+		- mod = mod || ''
+		svg(class="icon-" + name + ' ' + mod)
+			use(xlink:href="static/img/svg/sprite.svg#" + name)
+			
+mixin svgtrue(name,mod)
+		- mod = mod || ''
+		svg(class="icon-" + name + ' ' + mod)
+			use(xlink:href="static/img/svg/sprite-true.svg#" + name)
+			
+mixin webp(classname, path, type, name)
+	picture
+		source(srcset='static/img/'+path + ".webp" type="image/webp")
+		img(class=classname, src='static/img/'+path + "."+type alt=name)
+
+
+- var breakpoints = [1600, 1200, 750, 450, 0]
+- var imageSizes = [1800, 1200, 800, 600, 400]
+
+mixin webpResp(classname, path, type, name, width)
+	-let index
+	-let lastBrekpoint = breakpoints.length - 1
+	if width == null
+		-index= 0
+	else
+		-index= imageSizes.indexOf(width)
+	picture
+		while index < lastBrekpoint
+			source(type="image/webp" srcset="static/img/"+path+"-"+imageSizes[index]+".webp 1x, static/img/"+path+"-"+imageSizes[index] * 2+".webp 2x, static/img/"+path+"-"+imageSizes[index] * 3+".webp 3x" media="(min-width: "+breakpoints[index]+"px)")
+			source(srcset="static/img/"+path+"-"+imageSizes[index]+"."+type+" 1x, static/img/"+path+"-"+imageSizes[index] * 2+"."+type+" 2x, static/img/"+path+"-"+imageSizes[index] * 3+"."+type+" 3x" media="(min-width: "+breakpoints[index]+"px)")
+			-index = index + 1
+		source(type="image/webp" srcset="static/img/"+path+"-"+imageSizes[lastBrekpoint]+".webp 1x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 2 +".webp 2x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 3+".webp 3x" media="(min-width: 0px)")
+		img(class=classname, srcset="static/img/"+path+"-"+imageSizes[lastBrekpoint]+"."+type+" 1x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 2+"."+type+" 2x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 3+"."+type+" 3x" media="(min-width: "+breakpoints[lastBrekpoint]+"px)" loading="lazy" alt=name)
