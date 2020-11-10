@@ -16,7 +16,7 @@
         <div class="header">
           <div class="header__wrapper">
             <div class="header__box">
-              <div class="header__logo header_over"><a class="logo" href="./">
+              <div class="header__logo header_over"><a class="logo" href="./"> <span class="hidden"> Стройконтроль </span>
                   <svg class="icon-logo logo__icon logo__item">
                     <use xlink:href="static/img/svg/sprite.svg#logo"></use>
                   </svg><span class="logo__text logo__item">стройконтроль</span></a></div>
@@ -593,20 +593,20 @@
           <div class="modal__body">
             <form class="modal__form">
               <div class="modal__field">
-                <input class="modal__input" type="text" required>
-                <label class="modal__label">Ваше имя</label>
+                <input class="modal__input" type="text" id="modalName" required>
+                <label class="modal__label" for="modalName">Ваше имя</label>
               </div>
               <div class="modal__field">
-                <input class="modal__input" type="text" required>
-                <label class="modal__label">Ваша фамилия</label>
+                <input class="modal__input" id="modalSurname" type="text" required>
+                <label class="modal__label" for="modalSurname">Ваша фамилия</label>
               </div>
               <div class="modal__field">
-                <input class="modal__input" type="text" required>
-                <label class="modal__label">Ваш Email</label>
+                <input class="modal__input" id="modalEmail" type="text" required>
+                <label class="modal__label for="modalEmail"">Ваш Email</label>
               </div>
               <div class="modal__field">
-                <input class="modal__input" type="text" required>
-                <label class="modal__label">Ваш телефон</label>
+                <input class="modal__input" id="modalPhone" type="text" required>
+                <label class="modal__label" for="modalPhone">Ваш телефон</label>
               </div>
               <div class="modal__submit">
                 <button class="button modal__button button_primary" type="submit">Отправить</button>
