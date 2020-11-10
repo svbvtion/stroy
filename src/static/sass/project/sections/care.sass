@@ -1,0 +1,27 @@
+$careMarginLeft: 10
+$careMrginTop: 30
+.care
+	margin-bottom: 70px
+	&__body
+		+flex
+		flex-wrap: wrap
+		margin-left: -$careMarginLeft+px
+		margin-top: -$careMrginTop+px
+		+phone
+			flex-direction: column
+	&__item
+		margin-left: $careMarginLeft+px
+		margin-top: $careMrginTop+px
+	&__text
+		flex: 1 1 350px
+		+phone
+			text-align: center
+			flex: 1 1 0
+	&__bg
+		flex: 1 1 300px
+
+		+phone
+			height: 35vh
+			flex: 1 1 0
+	&__pic
+		object-position: left top 

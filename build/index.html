@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Умная доставка материалов для сложных строительных площадок">
+    <title>Document</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/libs/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__top">
+        <div class="header">
+          <div class="header__wrapper">
+            <div class="header__box">
+              <div class="header__logo header_over"><a class="logo" href="./">
+                  <svg class="icon-logo logo__icon logo__item">
+                    <use xlink:href="static/img/svg/sprite.svg#logo"></use>
+                  </svg><span class="logo__text logo__item">стройконтроль</span></a></div>
+              <div class="header__burger header_over">
+                <div class="burger"><span class="burger__decor"></span></div>
+              </div>
+              <div class="header__right">
+                <div class="header__menu">
+                  <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#delivery">Продукция</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#features">Процесс</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#reliability">Надежность</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#compliments">Клиенты</a></li>
+                      <li class="menu__item"><a class="menu__link js-modal__link" href="#" data-modal="modal-form">Связаться с нами</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <button class="header__button js-modal__link" data-modal="modal-default">Заказать демо</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__body">
+        <div class="wrapper">
+          <div class="hero__content">
+            <div class="hero__text">
+              <div class="hero__title">
+                <h1 class="title">Умная доставка материалов для сложных строительных площадок</h1>
+              </div>
+              <div class="hero__buttons">
+                <button class="button button_primary hero__buttons-item js-modal__link" data-modal="modal-default">Заказать демо</button>
+                <button class="button hero__buttons-item js-modal__link" data-modal="modal-default">Подробнее</button>
+              </div>
+            </div>
+            <div class="hero__bg">
+              <picture>
+                <source type="image/webp" srcset="static/img/hero-undefined.webp 1x, static/img/hero-NaN.webp 2x, static/img/hero-NaN.webp 3x" media="(min-width: undefinedpx)"/>
+                <source srcset="static/img/hero-undefined.png 1x, static/img/hero-NaN.png 2x, static/img/hero-NaN.png 3x" media="(min-width: undefinedpx)"/>
+                <source type="image/webp" srcset="static/img/hero-1800.webp 1x, static/img/hero-3600.webp 2x, static/img/hero-5400.webp 3x" media="(min-width: 1600px)"/>
+                <source srcset="static/img/hero-1800.png 1x, static/img/hero-3600.png 2x, static/img/hero-5400.png 3x" media="(min-width: 1600px)"/>
+                <source type="image/webp" srcset="static/img/hero-1200.webp 1x, static/img/hero-2400.webp 2x, static/img/hero-3600.webp 3x" media="(min-width: 1200px)"/>
+                <source srcset="static/img/hero-1200.png 1x, static/img/hero-2400.png 2x, static/img/hero-3600.png 3x" media="(min-width: 1200px)"/>
+                <source type="image/webp" srcset="static/img/hero-800.webp 1x, static/img/hero-1600.webp 2x, static/img/hero-2400.webp 3x" media="(min-width: 750px)"/>
+                <source srcset="static/img/hero-800.png 1x, static/img/hero-1600.png 2x, static/img/hero-2400.png 3x" media="(min-width: 750px)"/>
+                <source type="image/webp" srcset="static/img/hero-600.webp 1x, static/img/hero-1200.webp 2x, static/img/hero-1800.webp 3x" media="(min-width: 450px)"/>
+                <source srcset="static/img/hero-600.png 1x, static/img/hero-1200.png 2x, static/img/hero-1800.png 3x" media="(min-width: 450px)"/>
+                <source type="image/webp" srcset="static/img/hero-400.webp 1x, static/img/hero-800.webp 2x, static/img/hero-1200.webp 3x" media="(min-width: 0px)"/><img class="hero__pic" srcset="static/img/hero-400.png 1x, static/img/hero-800.png 2x, static/img/hero-1200.png 3x" media="(min-width: 0px)" loading="lazy" alt="background"/>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="wrapper">
+        <section class="advantages">
+          <h2 class="title hidden">advantages</h2>
+          <div class="advantages__body">
+            <div class="advantages__item">
+              <svg class="icon-graph advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#graph"></use>
+              </svg>
+              <p class="advantages__title">Повышение эффективности</p>
+              <p class="advantages__descr">Эффективные проекты стоят дешевле и завершаются в срок.</p>
+            </div>
+            <div class="advantages__item">
+              <svg class="icon-round advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#round"></use>
+              </svg>
+              <p class="advantages__title">Снижение потерь</p>
+              <p class="advantages__descr">Тщательно отслеживайте движение стройматериалов, чтобы избежать краж и повреждений.</p>
+            </div>
+            <div class="advantages__item">
+              <svg class="icon-safe advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#safe"></use>
+              </svg>
+              <p class="advantages__title">Повышение безопасности</p>
+              <p class="advantages__descr">Обеспечьте здоровье и благополучие людей, работающих на вашей площадке.</p>
+            </div>
+          </div>
+        </section>
+        <section class="chaos">
+          <div class="chaos__text">
+            <h2 class="section-title">Строительство - это хаос</h2>
+            <p class="section-descr">Хаос может быть удивительной творческой силой, воздвигающая новые здания из пыли. Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование. Это означает, что вы действительно не контролируете ситуацию. </p>
+          </div>
+          <div class="chaos__bg">
+            <picture>
+              <source type="image/webp" srcset="static/img/chaos-1800.webp 1x, static/img/chaos-3600.webp 2x, static/img/chaos-5400.webp 3x" media="(min-width: 1600px)"/>
+              <source srcset="static/img/chaos-1800.png 1x, static/img/chaos-3600.png 2x, static/img/chaos-5400.png 3x" media="(min-width: 1600px)"/>
+              <source type="image/webp" srcset="static/img/chaos-1200.webp 1x, static/img/chaos-2400.webp 2x, static/img/chaos-3600.webp 3x" media="(min-width: 1200px)"/>
+              <source srcset="static/img/chaos-1200.png 1x, static/img/chaos-2400.png 2x, static/img/chaos-3600.png 3x" media="(min-width: 1200px)"/>
+              <source type="image/webp" srcset="static/img/chaos-800.webp 1x, static/img/chaos-1600.webp 2x, static/img/chaos-2400.webp 3x" media="(min-width: 750px)"/>
+              <source srcset="static/img/chaos-800.png 1x, static/img/chaos-1600.png 2x, static/img/chaos-2400.png 3x" media="(min-width: 750px)"/>
+              <source type="image/webp" srcset="static/img/chaos-600.webp 1x, static/img/chaos-1200.webp 2x, static/img/chaos-1800.webp 3x" media="(min-width: 450px)"/>
+              <source srcset="static/img/chaos-600.png 1x, static/img/chaos-1200.png 2x, static/img/chaos-1800.png 3x" media="(min-width: 450px)"/>
+              <source type="image/webp" srcset="static/img/chaos-400.webp 1x, static/img/chaos-800.webp 2x, static/img/chaos-1200.webp 3x" media="(min-width: 0px)"/><img class="chaos__pic" srcset="static/img/chaos-400.png 1x, static/img/chaos-800.png 2x, static/img/chaos-1200.png 3x" media="(min-width: 0px)" loading="lazy" alt="background"/>
+            </picture>
+          </div>
+        </section>
+        <section class="appeal">
+          <div class="appeal__text">
+            <h2 class="section-title">Пора навести порядок на вашей стройплощадке и взять под контроль свой проект</h2>
+          </div>
+        </section>
+        <section class="care">
+          <div class="care__body">
+            <div class="care__text care__item">
+              <h2 class="section-title">Мы заботимся о доставке на стройплощадку и о людях, которые на них рассчитывают</h2>
+              <p class="section-descr">Мы знаем всё о гордости от сияющего нового здания. Нам также известно всё о разочаровании от попыток завершить проект в срок и в рамках бюджета.</p><span class="line-decor">Мы здесь, чтобы помочь.</span>
+            </div>
+            <div class="care__bg care__item">
+              <picture>
+                <source srcset="static/img/care.webp" type="image/webp"/><img class="care__pic bg-pic" src="static/img/care.png" alt="care" loading="lazy"/>
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="partners__slider">
+            <div class="partners-wrapper swiper-wrapper">
+              <div class="swiper-slide partner">
+                <div class="partner__bg">
+                  <picture>
+                    <source srcset="static/img/firm-1.webp" type="image/webp"/><img class="partner__pic" src="static/img/firm-1.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide partner">
+                <div class="partner__bg">
+                  <picture>
+                    <source srcset="static/img/firm-2.webp" type="image/webp"/><img class="partner__pic" src="static/img/firm-2.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide partner">
+                <div class="partner__bg">
+                  <picture>
+                    <source srcset="static/img/firm-3.webp" type="image/webp"/><img class="partner__pic" src="static/img/firm-3.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide partner">
+                <div class="partner__bg">
+                  <picture>
+                    <source srcset="static/img/firm-4.webp" type="image/webp"/><img class="partner__pic" src="static/img/firm-4.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide partner">
+                <div class="partner__bg">
+                  <picture>
+                    <source srcset="static/img/firm-5.webp" type="image/webp"/><img class="partner__pic" src="static/img/firm-5.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="about__title">
+            <h2 class="section-title">Что такое СтройКонтроль?</h2>
+            <p class="section-descr">СтройКонтроль - это интеллектуальная система управления доставкой, предоставляющая информацию и контроль материалов на сложных строительных площадках в режиме реального времени.</p>
+          </div>
+          <div class="about__capabilities">
+            <div class="about__item capability">
+              <div class="capability__text capability__item"><span class="capability__title">Отслеживайте доставку по всей цепочке поставок</span>
+                <p class="capability__descr">От поставщика до субподрядчика - вы всегда знаете, где находятся ваши материалы, благодаря чему обычные отходы уходят в прошлое и сокращаются несчастные случаи на месте.</p>
+              </div>
+              <div class="capability__bg capability__item">
+                <picture>
+                  <source srcset="static/img/delivery.webp" type="image/webp"/><img class="capability__pic bg-pic" src="static/img/delivery.png" alt="capability" loading="lazy"/>
+                </picture>
+              </div>
+            </div>
+            <div class="about__item capability">
+              <div class="capability__text capability__item"><span class="capability__title">Оптимизируйте и контролируйте свое прибытие на место</span>
+                <p class="capability__descr">Транспортные средства доставки прибывают в фиксированные промежутки времени в заранее назначенные отсеки, где разгрузочное оборудование готово и ждет их.</p>
+              </div>
+              <div class="capability__bg capability__item">
+                <picture>
+                  <source srcset="static/img/optimization.webp" type="image/webp"/><img class="capability__pic bg-pic" src="static/img/optimization.png" alt="capability" loading="lazy"/>
+                </picture>
+              </div>
+            </div>
+            <div class="about__item capability">
+              <div class="capability__text capability__item"><span class="capability__title">Возьмите под контроль данные в режиме реального времени</span>
+                <p class="capability__descr">Интеллектуальная отчетность дает вам возможность принимать решения в зависимости от того, как обстоят дела в данный момент. Больше никаких ручных отчетов по заливке бетона или ежемесячной проверки 10.000 накладных со счетами, все это доступно онлайн без каких-либо усилий.</p>
+              </div>
+              <div class="capability__bg capability__item">
+                <picture>
+                  <source srcset="static/img/user.webp" type="image/webp"/><img class="capability__pic bg-pic" src="static/img/user.png" alt="capability" loading="lazy"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="delivery" id="delivery">
+          <div class="delivery__header">
+            <h2 class="section-title">Доставка стала проще</h2>
+            <p class="section-descr">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</p>
+          </div>
+          <div class="delivery__content">
+            <div class="delivery__item">
+              <svg class="icon-car delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#car"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Бетон</span>
+                <p class="delivery__descr">Поставки бетона точно планируются, а его состояние контролируется, что обеспечивает максимально возможное время для установки.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-removal delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#removal"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Утилизация отходов</span>
+                <p class="delivery__descr">Отходы контролируются и сортируются, а заполненность контейнеров отслеживается в цифровом виде.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-Formwork delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#Formwork"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Опалубка</span>
+                <p class="delivery__descr">Вся опалубка отслеживается от прибытия до отправления, а ее состояние контролируется, что сводит к минимуму потери и повреждения.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-Precasts delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#Precasts"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Сборные панели</span>
+                <p class="delivery__descr">Сборные панели прибывают по очереди, их хранение на месте отслеживается, а их установка планируется и контролируется.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-Facades delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#Facades"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Фасады</span>
+                <p class="delivery__descr">Элементы фасада поступают последовательно, их сборка контролируется, а перемещение отслеживается.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-Fit-out delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#Fit-out"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Отделка</span>
+                <p class="delivery__descr">Материалы поступают точно в срок, маркируются и детально отслеживаются для установки.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-Scaffolding delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#Scaffolding"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Строительные леса</span>
+                <p class="delivery__descr">Строительные леса отслеживаются от получения до хранения, использования и возврата, поэтому всегда ясно, что на месте и где.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-tractor delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#tractor"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Оборудование</span>
+                <p class="delivery__descr">Оборудование и операторы гарантированно доступны в случае необходимости, а их рабочее состояние отслеживается.</p>
+              </div>
+            </div>
+            <div class="delivery__item">
+              <svg class="icon-MEP delivery__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#MEP"></use>
+              </svg>
+              <div class="delivery__text"><span class="delivery__title">Электрика и сантехника</span>
+                <p class="delivery__descr">Доставка осуществляется в точной последовательности для сложной установки, что сокращает или устраняет необходимость в хранении.</p>
+              </div>
+            </div>
+          </div>
+          <p class="delivery__other">... <span class="line-decor"> и все остальные материалы, </span> которые поступают или покидают вашу площадку</p>
+        </section>
+        <section class="reliability" id="reliability">
+          <div class="section-header reliability__header">
+            <div class="reliability__title">
+              <h2 class="section-title">Надёжность</h2>
+              <svg class="icon-Vector reliability__icon">
+                <use xlink:href="static/img/svg/sprite.svg#Vector"></use>
+              </svg>
+            </div>
+            <p class="section-descr">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</p>
+          </div>
+          <div class="advantages__body">
+            <div class="advantages__item">
+              <svg class="icon-cloud advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#cloud"></use>
+              </svg>
+              <p class="advantages__title">Сниженное загрязнение</p>
+              <p class="advantages__descr">При оптимизации логистики требуется меньше поездок, что приводит к снижению выбросов CO2. Выбрасываемый CO2 контролируется, что позволяет ставить цели и вносить ощутимые улучшения.</p>
+            </div>
+            <div class="advantages__item">
+              <svg class="icon-round-1 advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#round-1"></use>
+              </svg>
+              <p class="advantages__title">Улучшенное управление отходами</p>
+              <p class="advantages__descr">Упрощается сортировка отходов, автоматизируется утилизация отходов, а поврежденные материалы при необходимости используются повторно, что снижает затраты и стимулирует переработку и повторное использование.</p>
+            </div>
+            <div class="advantages__item">
+              <svg class="icon-peoples advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#peoples"></use>
+              </svg>
+              <p class="advantages__title">Улучшенное влияние на общество</p>
+              <p class="advantages__descr">Уменьшаются проблемы с дорожным движением и шумовое загрязнение, что улучшает жизнь местного сообщества. Улучшенное обращение с материалами и хранение означает, что рабочие также лучше защищены.</p>
+            </div>
+          </div>
+          <div class="reliability__more">
+            <svg class="icon-arms more__icon more__item">
+              <use xlink:href="static/img/svg/sprite.svg#arms"></use>
+            </svg><span class="more__text more__item">Надёжная конструкция СтройКонтроль входит в стандартную комплектацию.</span>
+            <button class="button more__button more__item js-modal__link" data-modal="modal-default">Подробнее</button>
+          </div>
+        </section>
+      </div>
+      <section class="app">
+        <div class="app__bg">
+          <picture>
+            <source type="image/webp" srcset="static/img/gatgets-1800.webp 1x, static/img/gatgets-3600.webp 2x, static/img/gatgets-5400.webp 3x" media="(min-width: 1600px)"/>
+            <source srcset="static/img/gatgets-1800.png 1x, static/img/gatgets-3600.png 2x, static/img/gatgets-5400.png 3x" media="(min-width: 1600px)"/>
+            <source type="image/webp" srcset="static/img/gatgets-1200.webp 1x, static/img/gatgets-2400.webp 2x, static/img/gatgets-3600.webp 3x" media="(min-width: 1200px)"/>
+            <source srcset="static/img/gatgets-1200.png 1x, static/img/gatgets-2400.png 2x, static/img/gatgets-3600.png 3x" media="(min-width: 1200px)"/>
+            <source type="image/webp" srcset="static/img/gatgets-800.webp 1x, static/img/gatgets-1600.webp 2x, static/img/gatgets-2400.webp 3x" media="(min-width: 750px)"/>
+            <source srcset="static/img/gatgets-800.png 1x, static/img/gatgets-1600.png 2x, static/img/gatgets-2400.png 3x" media="(min-width: 750px)"/>
+            <source type="image/webp" srcset="static/img/gatgets-600.webp 1x, static/img/gatgets-1200.webp 2x, static/img/gatgets-1800.webp 3x" media="(min-width: 450px)"/>
+            <source srcset="static/img/gatgets-600.png 1x, static/img/gatgets-1200.png 2x, static/img/gatgets-1800.png 3x" media="(min-width: 450px)"/>
+            <source type="image/webp" srcset="static/img/gatgets-400.webp 1x, static/img/gatgets-800.webp 2x, static/img/gatgets-1200.webp 3x" media="(min-width: 0px)"/><img class="app__pic" srcset="static/img/gatgets-400.png 1x, static/img/gatgets-800.png 2x, static/img/gatgets-1200.png 3x" media="(min-width: 0px)" loading="lazy" alt="1200"/>
+          </picture>
+        </div>
+        <div class="wrapper">
+          <div class="app__content">
+            <div class="app__text">
+              <h2 class="section-title app__title">Создан для строительства</h2>
+              <div class="app__advantages">
+                <ul class="app__list">
+                  <li class="app__item">
+                    <p class="app__item-title">Хорошо виден в любых условиях</p>
+                    <p class="app__item-descr">Независимо от того, солнечно или темно, найдется подходящий режим экрана. Независимо от того, солнечно или темно, найдется подходящий режим экрана. Независимо от того, солнечно или темно, найдется подходящий режим экрана</p>
+                  </li>
+                  <li class="app__item">
+                    <p class="app__item-title">Поддержка международных языков</p>
+                    <p class="app__item-descr">На современной стройке работают люди со всего мира. Язык не является проблемой для СтройКонтроля.</p>
+                  </li>
+                  <li class="app__item">
+                    <p class="app__item-title">Работает на любом устройстве - мобильном телефоне, планшете, ноутбуке</p>
+                    <p class="app__item-descr">Люди на разных должностях используют разные устройства. СтройКонтроль автоматически настраивается в соответствии с требованиями. Вы также можете проецировать панели мониторинга живого проекта на настенные экраны.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="app__buttons">
+                <button class="button app__buttons_item js-modal__link" data-modal="modal-default">Заказать демо</button>
+                <button class="button app__button app__buttons_item js-modal__link" data-modal="modal-default">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__body">
+            <div class="advantages__item">
+              <svg class="icon-study advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#study"></use>
+              </svg>
+              <p class="advantages__title">Привлечение субподрядчика</p>
+              <p class="advantages__descr">Для выполнения этой работы вам понадобятся ваши субподрядчики. У нас есть проверенный и надежный процесс для этого.</p>
+            </div>
+            <div class="advantages__item">
+              <svg class="icon-engaged advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#engaged"></use>
+              </svg>
+              <p class="advantages__title">Привлечены ключевые поставщики</p>
+              <p class="advantages__descr">У нас уже есть ключевые поставщики, использующие программное обеспечение, что обеспечивает еще больший контроль и прозрачность информации.</p>
+            </div>
+            <div class="advantages__item">
+              <svg class="icon-compliance advantages__icon">
+                <use xlink:href="static/img/svg/sprite-true.svg#compliance"></use>
+              </svg>
+              <p class="advantages__title">100% соответствие</p>
+              <p class="advantages__descr">У нас есть безупречный список обеспечения соответствия требованиям, которые необходимы вам для успешного выполнения проекта с помощью СтройКонтроль.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <section class="features" id="features">
+          <div class="features__decor features__item">
+            <div class="features__header">
+              <h2 class="section-title">Как с нами работать</h2>
+              <p class="section-descr">Начать работу со СтройКонтроль легко, достаточно заказать демо-версию.</p>
+            </div>
+            <div class="features__bg">
+              <picture>
+                <source srcset="static/img/what.webp" type="image/webp"/><img class="features__pic" src="static/img/what.png" alt="features" loading="lazy"/>
+              </picture>
+            </div>
+          </div>
+          <div class="features__points features__item">
+            <div class="point">
+              <div class="point__number">1</div>
+              <div class="point__text"><span class="point__title">Заказать демо</span><span class="point__descr">Вы увидите презентацию, в которой подробно объясняется, как работает СтройКонтроль для решения задач строительной логистики в таких сложных проектах, как ваш.</span></div>
+            </div>
+            <div class="point">
+              <div class="point__number">2</div>
+              <div class="point__text"><span class="point__title">Согласование сделки</span><span class="point__descr">Мы обсудим ваш строительный проект и предложим реализацию СтройКонтроль, которая идеально соответствует вашим потребностям и будет иметь для вас ценность.</span></div>
+            </div>
+            <div class="point">
+              <div class="point__number">3</div>
+              <div class="point__text"><span class="point__title">Подготовка</span><span class="point__descr">Мы полностью обучаем вашу команду тому, как использовать систему, с помощью онлайн-видеоуроков и обеспечиваем постоянную всестороннюю поддержку.</span></div>
+            </div>
+            <div class="point">
+              <div class="point__number">4</div>
+              <div class="point__text"><span class="point__title">Внедрение и интеграция</span><span class="point__descr">Мы настраиваем программное обеспечение так, чтобы оно точно моделировало вашу площадку, а затем помогаем вам интегрировать его с программным обеспечением Business Intelligence для получения новых мощных аналитических данных.</span></div>
+            </div>
+            <div class="features__buttons buttons">
+              <button class="button button_primary buttons-item js-modal__link" data-modal="modal-default">Заказать демо</button>
+              <button class="button buttons-item js-modal__link" data-modal="modal-default">Подробнее</button>
+            </div>
+          </div>
+        </section>
+        <section class="compliments" id="compliments">
+          <div class="compliments__header section-header">
+            <h2 class="section-title">Почему нужно выбрать нас?</h2>
+            <p class="section-descr">В строительной логистике всегда есть возможности для улучшения.</p>
+          </div>
+          <div class="compliments__body">
+            <div class="compliments__content compliments__item">
+              <div class="compliments__points">
+                <div class="delivery__item compliments__point">
+                  <svg class="icon-fred delivery__icon compliments__icon">
+                    <use xlink:href="static/img/svg/sprite-true.svg#fred"></use>
+                  </svg>
+                  <div class="delivery__text"><span class="delivery__title">Отмеченное наградами ПО</span>
+                    <p class="delivery__descr">Всемирно известное программное обеспечение, признанное государственными учреждениями, инновационными группами и техническими организациями</p>
+                  </div>
+                </div>
+                <div class="delivery__item compliments__point">
+                  <svg class="icon-great delivery__icon compliments__icon">
+                    <use xlink:href="static/img/svg/sprite-true.svg#great"></use>
+                  </svg>
+                  <div class="delivery__text"><span class="delivery__title">Большой потенциал</span>
+                    <p class="delivery__descr">Входит в топ-25 самых многообещающих стартапов ConTech по версии Cemex Ventures, Moscow Consulting Group, BuiltWorld и PwC</p>
+                  </div>
+                </div>
+                <div class="delivery__item compliments__point">
+                  <svg class="icon-leaders delivery__icon compliments__icon">
+                    <use xlink:href="static/img/svg/sprite-true.svg#leaders"></use>
+                  </svg>
+                  <div class="delivery__text"><span class="delivery__title">Выбор лидеров рынка</span>
+                    <p class="delivery__descr">Рекомендуемый поставщик технологий для 3 из 10 ведущих генеральных подрядчиков в Европе</p>
+                  </div>
+                </div>
+                <div class="delivery__item compliments__point">
+                  <svg class="icon-hands delivery__icon compliments__icon">
+                    <use xlink:href="static/img/svg/sprite-true.svg#hands"></use>
+                  </svg>
+                  <div class="delivery__text"><span class="delivery__title">Устойчивое развитие и безопасность</span>
+                    <p class="delivery__descr">Способствует снижению выбросов CO2 и повышает безопасность на месте</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="compliments__quotes compliments__item swiper-container">
+              <picture>
+                <source srcset="static/img/commas.webp" type="image/webp"/><img class="compliments__decor" src="static/img/commas.png" alt="decor" loading="lazy"/>
+              </picture>
+              <div class="swiper-wrapper">
+                <div class="quote swiper-slide">
+                  <div class="quote__title section-title">Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для улучшения наших строительных процессов.</div>
+                  <div class="quote__author author">
+                    <div class="author__photo">
+                      <picture>
+                        <source srcset="static/img/author.webp" type="image/webp"/><img class="author__pic" src="static/img/author.png" alt="author" loading="lazy"/>
+                      </picture>
+                    </div>
+                    <div class="author__text"><span class="author__name">Волков Матвей</span><span class="author__position">Генеральный директор ООО “СпецСтрой”</span></div>
+                  </div>
+                </div>
+                <div class="quote swiper-slide">
+                  <div class="quote__title section-title">Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для улучшения наших строительных процессов.</div>
+                  <div class="quote__author author">
+                    <div class="author__photo">
+                      <picture>
+                        <source srcset="static/img/author.webp" type="image/webp"/><img class="author__pic" src="static/img/author.png" alt="author" loading="lazy"/>
+                      </picture>
+                    </div>
+                    <div class="author__text"><span class="author__name">Волков Матвей</span><span class="author__position">Генеральный директор ООО “СпецСтрой”</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="rewards">
+          <div class="rewards__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide rewards__item reward">
+                <div class="reward__bg">
+                  <picture>
+                    <source srcset="static/img/reward-1.webp" type="image/webp"/><img class="reward__pic" src="static/img/reward-1.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+                <p class="reward__name">50 лучших инструментов ConTech</p>
+              </div>
+              <div class="swiper-slide rewards__item reward">
+                <div class="reward__bg">
+                  <picture>
+                    <source srcset="static/img/reward-2.webp" type="image/webp"/><img class="reward__pic" src="static/img/reward-2.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+                <p class="reward__name">25 лучших стартапов ConTech в ЕС</p>
+              </div>
+              <div class="swiper-slide rewards__item reward">
+                <div class="reward__bg">
+                  <picture>
+                    <source srcset="static/img/reward-3.webp" type="image/webp"/><img class="reward__pic" src="static/img/reward-3.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+                <p class="reward__name">50 лучших стартапов Global ConTech</p>
+              </div>
+              <div class="swiper-slide rewards__item reward">
+                <div class="reward__bg">
+                  <picture>
+                    <source srcset="static/img/reward-4.webp" type="image/webp"/><img class="reward__pic" src="static/img/reward-4.png" alt="partner" loading="lazy"/>
+                  </picture>
+                </div>
+                <p class="reward__name">2018 - 50 лучших стартапов ЕС PropTech</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="logistics">
+          <div class="logistics__bg">
+            <picture>
+              <source type="image/webp" srcset="static/img/logistics-1800.webp 1x, static/img/logistics-3600.webp 2x, static/img/logistics-5400.webp 3x" media="(min-width: 1600px)"/>
+              <source srcset="static/img/logistics-1800.png 1x, static/img/logistics-3600.png 2x, static/img/logistics-5400.png 3x" media="(min-width: 1600px)"/>
+              <source type="image/webp" srcset="static/img/logistics-1200.webp 1x, static/img/logistics-2400.webp 2x, static/img/logistics-3600.webp 3x" media="(min-width: 1200px)"/>
+              <source srcset="static/img/logistics-1200.png 1x, static/img/logistics-2400.png 2x, static/img/logistics-3600.png 3x" media="(min-width: 1200px)"/>
+              <source type="image/webp" srcset="static/img/logistics-800.webp 1x, static/img/logistics-1600.webp 2x, static/img/logistics-2400.webp 3x" media="(min-width: 750px)"/>
+              <source srcset="static/img/logistics-800.png 1x, static/img/logistics-1600.png 2x, static/img/logistics-2400.png 3x" media="(min-width: 750px)"/>
+              <source type="image/webp" srcset="static/img/logistics-600.webp 1x, static/img/logistics-1200.webp 2x, static/img/logistics-1800.webp 3x" media="(min-width: 450px)"/>
+              <source srcset="static/img/logistics-600.png 1x, static/img/logistics-1200.png 2x, static/img/logistics-1800.png 3x" media="(min-width: 450px)"/>
+              <source type="image/webp" srcset="static/img/logistics-400.webp 1x, static/img/logistics-800.webp 2x, static/img/logistics-1200.webp 3x" media="(min-width: 0px)"/><img class="logistics__pic" srcset="static/img/logistics-400.png 1x, static/img/logistics-800.png 2x, static/img/logistics-1200.png 3x" media="(min-width: 0px)" loading="lazy" alt="1200"/>
+            </picture>
+          </div>
+          <div class="logistics__content">
+            <h2 class="section-title">Готовы оптимизировать логистику доставки для вашего сложного проекта?</h2>
+            <div class="logistics__buttons">
+              <button class="button button_primary logistics__buttons_item js-modal__link" data-modal="modal-default">Заказать демо</button>
+              <button class="button logistics__button logistics__buttons_item js-modal__link" data-modal="modal-form">Связаться с нами</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__body">
+          <p class="footer__copy footer__item">&copy; 2020 СтройКонтроль, Все права защищены.</p><a class="footer__confident footer__item js-modal__link" data-modal="modal-default" href="#">Политика конфиденциальности </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal-form">
+      <div class="modal__overlay" data-close="true">
+        <div class="modal__window">
+          <div class="modal__close" data-close="true"></div>
+          <div class="modal__header">
+            <p class="modal__title">Привет</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form">
+              <div class="modal__field">
+                <input class="modal__input" type="text" required>
+                <label class="modal__label">Ваше имя</label>
+              </div>
+              <div class="modal__field">
+                <input class="modal__input" type="text" required>
+                <label class="modal__label">Ваша фамилия</label>
+              </div>
+              <div class="modal__field">
+                <input class="modal__input" type="text" required>
+                <label class="modal__label">Ваш Email</label>
+              </div>
+              <div class="modal__field">
+                <input class="modal__input" type="text" required>
+                <label class="modal__label">Ваш телефон</label>
+              </div>
+              <div class="modal__submit">
+                <button class="button modal__button button_primary" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-default">
+      <div class="modal__overlay" data-close="true">
+        <div class="modal__default">
+          <div class="modal__close" data-close="true"></div>
+          <p class="modal__default_text">Данная версия сайта носит демонстрационный характер</p>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/slider.js" type="module" defer></script>
+    <script src="static/js/main.js" type="module"></script>
+  </body>
+</html>

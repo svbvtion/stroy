@@ -1,0 +1,28 @@
+$logisticsButtonsMargin: 10
+
+.logistics
+	position: relative
+	padding: 115px 40px
+	background-color: $bg-third
+	margin-bottom: 150px
+	+phone
+		margin-bottom: 70px
+	&__content
+		position: relative
+		text-align: center
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic(top)
+	&__buttons
+		margin-top: -$logisticsButtonsMargin+px
+		margin-left: -$logisticsButtonsMargin+px
+		+flex(center)
+		+r(500)
+			flex-direction: column
+		&_item	
+			margin-top: $logisticsButtonsMargin+px
+			margin-left: $logisticsButtonsMargin+px
+	&__button
+		background-color: #fff
+		border: none

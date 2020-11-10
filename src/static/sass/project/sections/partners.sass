@@ -1,0 +1,27 @@
+.partners
+	padding: 55px 0
+	margin-bottom: 80px
+	border: 1px solid $border-primary
+	border-right: none
+	border-left: none
+	overflow: hidden
+
+
+	&__body
+		+flex(center)
+		margin-top: -20px
+		margin-left: -35px
+		flex-wrap: wrap
+	&__item
+		margin: 20px 0 0 35px
+.partner
+	width: 180px
+	max-height: 90px
+	min-height: 60px
+	position: relative
+	text-align: center
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic(top)
+		object-fit: scale-down

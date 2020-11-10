@@ -1,0 +1,96 @@
+$quotesTop: 50px
+$quotesLeft: 50px
+.compliments
+	margin-bottom: 125px
+	+phone
+		margin-bottom: 70px
+	&__body
+		+flex(space-between, start)
+		margin-left: -50px
+		flex-wrap: wrap
+	&__header
+		margin-bottom: 55px
+	&__point
+		margin-bottom: 30px
+	&__icon
+		max-width: 48px
+		min-width: 48px
+	&__content
+		flex: 1 5 300px
+	&__quotes
+		background-color: $bg-unit
+		position: relative
+		flex: 1 1 450px
+
+	&__decor
+		position: absolute
+		left: 40px
+		top: 40px
+		max-width: 105px
+		height: auto
+
+		+r(450)
+			top: 10px
+			left: 10px
+	&__item
+		margin-left: 50px
+
+
+.quote
+	position: relative
+	padding: $quotesTop $quotesLeft
+	+r(450)
+		padding: 20px
+
+
+
+	&__title
+		font-size: 30px
+		margin-bottom: 30px
+		+r(450)
+			font-size: 1.5rem
+		+r(350)
+			font-size: 1rem
+	&__author
+		margin-bottom: 30px
+
+
+.author
+	=author-text
+		font-size: 16px
+		line-height: 1.18
+		display: block
+	+flex(start, center)
+	&__photo
+		min-width: 48px
+		max-width: 48px
+		height: 48px
+		position: relative
+		margin-right: 8px
+	&__pic
+		+bg-pic
+		border-radius: 50%
+		overflow: hidden
+	&__name
+		+author-text
+		color: $txt-primary
+		margin-bottom: 3px
+		
+		+r(350)
+			font-size: 0.9rem
+	&__position
+		+author-text
+		color: $txt-secondary
+		+r(350)
+			font-size: .8rem
+.dots
+	margin-left: 5px
+.swiper-pagination
+	&-bullet
+		height: 8px
+		width: 8px
+		border-radius: 50%
+		background-color: rgba($blue, .2)
+		&-active
+			background-color: $blue
+

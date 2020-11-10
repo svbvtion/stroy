@@ -5,7 +5,7 @@ mixin svg(name,mod)
 		svg(class="icon-" + name + ' ' + mod)
 			use(xlink:href="static/img/svg/sprite.svg#" + name)
 			
-mixin svgtrue(name,mod)
+mixin svgTrue(name,mod)
 		- mod = mod || ''
 		svg(class="icon-" + name + ' ' + mod)
 			use(xlink:href="static/img/svg/sprite-true.svg#" + name)
@@ -13,7 +13,7 @@ mixin svgtrue(name,mod)
 mixin webp(classname, path, type, name)
 	picture
 		source(srcset='static/img/'+path + ".webp" type="image/webp")
-		img(class=classname, src='static/img/'+path + "."+type alt=name)
+		img(class=classname, src='static/img/'+path + "."+type alt=name loading="lazy")
 
 
 - var breakpoints = [1600, 1200, 750, 450, 0]

@@ -1,0 +1,44 @@
+.reliability
+	margin-bottom: 140px
+	+phone
+		margin-bottom: 70px
+	&__title
+		display: inline-block
+		position: relative
+	&__icon
+		height: 40px
+		width: 40px
+		position: absolute
+		top: 0
+		transform: translate(2em, -1.5em)
+		right: 0
+	&__header
+		margin-bottom: 50px
+	&__more
+		margin-top: 60px
+		padding: 40px
+		background-color: $bg-unit
+		+flex(space-between, center)
+		+phone
+			flex-direction: column
+			justify-content: center
+.more
+	&__item
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+		+phone
+			margin-left: 0
+			margin-top: 20px
+			&:first-child
+				margin-top: 0
+	&__icon
+		height: 40px
+		width: 40px
+		fill: $blue
+	&__text
+		font-size: 18px
+		line-height: 1.77
+		text-align: center
+	&__button
+		background-color: #fff

@@ -1,0 +1,59 @@
+.features
+	+flex(space-between)
+	flex-wrap: wrap
+	margin: -30px 0 0 -50px
+	margin-bottom: 90px
+	+phone
+		margin-bottom: 70px
+	+r(900)
+		flex-direction: column
+
+	&__item
+		margin: 30px 0 0 50px
+	&__header
+		margin-bottom: 30px
+	&__decor
+		flex: 1 1 350px
+		+r(900)
+			flex: 1 1 0
+			text-align: center
+
+	&__points
+		flex: 1 1 400px
+		+r(900)
+			flex: 1 1 0
+	&__bg
+		height: 350px
+		position: relative
+		width: 100%
+	&__pic
+		position: absolute
+		max-width: 100%
+		height: 100%
+		object-fit: cover
+		+r(900)
+			+centerX
+
+.point
+	+flex
+	align-items: start
+	&__number
+		min-height: 40px
+		min-width: 40px
+
+		border: 1px solid $border-primary
+		margin-right: 30px
+		+flex(center, center)
+	&__text
+		margin-bottom: 30px
+	&__title
+		font-size: 18px
+		line-height: 1.3333
+		margin-bottom: 5px
+		display: block
+	&__descr
+		font-size: 16px
+		line-height: 1.5
+		color: $txt-secondary
+
+	

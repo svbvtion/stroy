@@ -1,0 +1,50 @@
+$aboutItemMargLeft: 90
+$aboutItemMargTop: 10
+
+
+.about
+	margin-bottom: 140px
+	+phone
+		margin-bottom: 70px
+	&__title
+		text-align: center
+		margin-bottom: 25px
+	&__capabilities
+		margin-left: -$aboutItemMargLeft + px
+		margin-top: -$aboutItemMargTop + px
+
+	&__item
+
+	
+
+.capability
+	+flex(space-between, center)
+	+rmin(768)
+		&:nth-child(even)
+			flex-direction: row-reverse
+	+phone
+		flex-direction: column-reverse
+		margin-bottom: 50px
+	&__item
+		margin-left: $aboutItemMargLeft + px
+		margin-top: $aboutItemMargTop + px
+	&__text
+		flex: 1 1 400px
+		+phone
+			flex: 1 1 0
+			text-align: center
+	&__bg
+		flex: 1 1 300px
+		+phone
+			flex: 1 1 0
+			height: 30vh
+	&__title
+		display: inline-block
+		font-size: 18px
+		line-height: 1.333
+		margin-bottom: 20px
+	&__descr
+		font-size: 16px
+		line-height: 1.5
+		color: $txt-secondary
+

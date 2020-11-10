@@ -1,0 +1,143 @@
+body
+	font-family: $font-primary
+	color: $txt-primary
+	background-color: $bg-primary
+	&.lock
+		overflow: hidden
+.wrapper
+	max-width: 1040px
+	margin: 0 auto
+	height: 100%
+	+r(1080)
+		padding: 0 20px
+.hidden
+	+hidden
+.logo
+	+flex(start, center)
+	fill: gold
+	margin-left: -8px
+	&__item
+		margin-left: 8px
+	&__icon
+		height: 45px
+		width: 30px
+	&__text
+		text-transform: uppercase
+		font-size: 22px
+		color: $txt-primary
+		+r(500)
+			display: none
+
+.menu
+	&__list
+		list-style: none
+		+flex
+	&__item
+		margin-right: 20px
+	&__link
+		font-size: 16px
+		color: $txt-secondary
+
+
+.burger
+	=decor
+		content: ''
+		position: absolute
+		height: 2px
+		width: 100%
+		background-color: #000
+		+smooth(.2)
+
+	height: 20px
+	width: 35px
+	position: relative
+	cursor: pointer
+
+	&:before, &:after, &__decor
+		+decor
+	&:after
+		top: 100%
+		transform: translateY(-100%)
+	&__decor
+		+centerY
+
+	&.active
+		&:after
+			top: 50%
+			transform: translateY(-100%) rotate(-45deg)
+		&:before
+			top: 50%
+			transform: translateY(-100%) rotate(45deg)
+		.burger
+			&__decor
+				display: none
+
+.title
+	font-weight: 400
+
+.section
+	&-header
+		text-align: center
+	&-title
+		font-size: 32px
+		line-height: 1.5
+		font-weight: 400
+		margin-bottom: 16px
+		+phone
+			font-size: 1.5rem
+	&-descr
+		font-size: 20px
+		line-height: 1.6
+		color: $txt-secondary
+		font-weight: 400
+		+phone
+			font-size: 1rem
+
+
+.button
+	padding: 13px 25px
+	font-size: 18px
+	border-radius: 4px
+	border: 1px solid $border-primary
+	color: $txt-button-secondary
+	background-color: #fff
+	+smooth
+	&:hover
+		background-color: $border-primary
+	&_primary
+		box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16)
+		border: none
+		background-color: $bg-button-primary
+		color: $txt-button-primary
+		&:hover
+			background-color: rgba($bg-button-primary, .8)
+
+.bg-pic
+	width: 100%
+	height: 100%
+	object-fit: scale-down
+.line-decor
+	font-size: 20px
+	line-height: 1.6
+	font-weight: 400
+	color: $txt-primary
+	position: relative
+	display: inline-block
+	z-index: -1
+	&:before
+		content: ''
+		height: 50%
+		width: 0
+		background-color: $line-decor
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: -1
+		+smooth
+.buttons
+	margin: -10px 0 0 -10px
+	+flex
+	+r(400)
+		flex-direction: column
+	&-item
+		margin: 10px 0 0 10px
