@@ -63,6 +63,7 @@ function menuActive() {
 	header.classList.toggle('active')
 	burger.classList.toggle('active')
 	headerRight.classList.toggle('active')
+	body.classList.toggle('lock')
 }
 
 function addBoxShadow(elem, params, color) {
